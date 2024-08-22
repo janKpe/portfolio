@@ -1,15 +1,35 @@
 {
-  "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
-  "title": "LiveTerm",
-  "name": "John Doe",
-  "ascii": "liveterm",
+  "readmeUrl": "https://raw.githubusercontent.com/janKpe/janKpe/master/README.md",
+  "logged_in_as_root": false,
+  "commands_to_run_without_sudo": [
+    "help",
+    "ls",
+    "decrypt",
+    "banner",
+    "sumfetch",
+    "repo",
+    "whoami",
+    "su",
+    "exit"
+  ],
+
+  "prompt": "",
+  "requested_password": "",
+  "passwords": {
+    "password": "...",
+    "root_password": ".=k&\"@{4.+nx$6\"r4£a?-"
+  },
+  "password_to_decrypt": "",
+  "title": "ssh user5617@jan-kupke",
+  "name": "Jan Kupke",
+  "ascii": "ja?",
   "social": {
-    "github": "github",
+    "github": "janKpe",
     "linkedin": "linkedin"
   },
-  "email": "contact@email.com",
-  "ps1_hostname": "liveterm",
-  "ps1_username": "visitor",
+  "email": "info@jan-kupke.de",
+  "ps1_hostname": "jan-kupke.de",
+  "ps1_username": "user5617",
   "repo": "https://github.com/Cveinnt/LiveTerm",
   "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
   "donate_urls": {
@@ -18,22 +38,22 @@
   },
   "colors": {
     "light": {
-      "background": "#FBF1C9",
-      "foreground": "#3C3836",
-      "yellow": "#D79921",
-      "green": "#98971A",
-      "gray": "#7C6F64",
-      "blue": "#458588",
-      "red": "#CA2124"
+      "background": "#0F1A14",
+      "foreground": "#B8C7BB",
+      "yellow": "#C7A600",
+      "green": "#4CAF50",
+      "gray": "#88998B",
+      "blue": "#2E8B57",
+      "red": "#FF6347"
     },
     "dark": {
-      "background": "#2E3440",
-      "foreground": "#E5E9F0",
-      "yellow": "#5E81AC",
-      "green": "#A3BE8C",
-      "gray": "#88C0D0",
-      "blue": "#EBCB8B",
-      "red": "#BF616A"
+      "background": "#081A0E",
+      "foreground": "#A8B9A3",
+      "yellow": "#C5A400",
+      "green": "#4CAF50",
+      "gray": "#768C77",
+      "blue": "#1E6652",
+      "red": "#D23A3A"
     }
   }
 }

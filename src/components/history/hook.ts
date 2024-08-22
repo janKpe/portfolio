@@ -10,13 +10,13 @@ export const useHistory = (defaultValue: Array<History>) => {
     history,
     command,
     lastCommandIndex,
-    setHistory: (value: string) =>
+    setHistory: (value: string, givenCommand?: string) =>
       setHistory([
         ...history,
         {
           id: history.length,
           date: new Date(),
-          command,
+          command: givenCommand ?? command,
           output: value,
         },
       ]),

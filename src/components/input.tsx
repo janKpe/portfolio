@@ -14,6 +14,7 @@ export const Input = ({
   setHistory,
   setLastCommandIndex,
   clearHistory,
+  togglePrompt: setComponentIndex,
 }) => {
   const onSubmit = async (event: React.KeyboardEvent<HTMLInputElement>) => {
     const commands: [string] = history
@@ -40,7 +41,13 @@ export const Input = ({
     if (event.key === 'Enter' || event.code === '13') {
       event.preventDefault();
       setLastCommandIndex(0);
-      await shell(command, setHistory, clearHistory, setCommand);
+      await shell(
+        command,
+        setHistory,
+        clearHistory,
+        setCommand,
+        setComponentIndex,
+      );
       containerRef.current.scrollTo(0, containerRef.current.scrollHeight);
     }
 

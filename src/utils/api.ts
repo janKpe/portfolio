@@ -23,8 +23,20 @@ export const getWeather = async (city: string) => {
 };
 
 export const getQuote = async () => {
-  const { data } = await axios.get('https://api.quotable.io/random');
-  return {
-    quote: `“${data.content}” — ${data.author}`,
-  };
+  try {
+    const { data } = await axios.get('https://type.fit/api/quotes');
+
+    const random_quote_index = Math.floor(Math.random() * data.length);
+
+    const quote = data[random_quote_index];
+    return {
+      quote: `“${quote.text}” — ${quote.author}`,
+    };
+  } catch (error) {
+    console.error('Error fetching quote:', error);
+    return {
+      quote:
+        'An error occurred while fetching the quote. Please try again later.',
+    };
+  }
 };

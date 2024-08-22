@@ -39,3 +39,48 @@ div#__next > div {
 ::-webkit-scrollbar-thumb:hover {
   background: #ff8037;
 }
+
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  7% {
+    opacity: 0.8;
+  }
+  9% {
+    opacity: 1;
+  }
+  12% {
+    opacity: 0.9;
+  }
+  20% {
+    opacity: 1;
+  }
+  77% {
+    opacity: 1;
+  }
+  79% {
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 1;
+  }
+  82% {
+    opacity: 0.8;
+  }
+  84% {
+    opacity: 1;
+  }
+  89% {
+    opacity: 0.9;
+  }
+  90% {
+    opacity: 1;
+  }
+}
+
+.flicker {
+  animation: flicker 5s infinite;
+  animation-timing-function: steps(1, end);
+}
